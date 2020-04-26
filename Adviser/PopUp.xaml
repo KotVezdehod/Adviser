@@ -1,0 +1,25 @@
+﻿<Window x:Class="Adviser.PopUp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Adviser"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Height="25" Width="210" Activated="Window_Activated">
+    <WindowChrome.WindowChrome>
+        <WindowChrome     
+        CaptionHeight="1"  
+        CornerRadius ="0"
+        ResizeBorderThickness="4"         
+        GlassFrameThickness="0">
+        </WindowChrome>
+    </WindowChrome.WindowChrome>
+    <Window.Background>
+        <SolidColorBrush Opacity="1.0" Color="White"/>
+    </Window.Background>
+    <Border Background="#50FFFFFF" BorderThickness="2,0,2,2">
+        <TextBlock Grid.Row="0" Text="Пришли новые данные!" HorizontalAlignment="Center" FontSize="18"></TextBlock>
+    </Border>
+</Window>
